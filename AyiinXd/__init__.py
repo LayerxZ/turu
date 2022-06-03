@@ -166,7 +166,7 @@ CMD_HANDLER = os.environ.get("CMD_HANDLER") or "."
 SUDO_HANDLER = os.environ.get("SUDO_HANDLER", r"$")
 
 # Support
-GROUP = os.environ.get("GROUP", "AyiinXdSupport")
+GROUP = os.environ.get("GROUP", "wibuempireindo")
 CHANNEL = os.environ.get("CHANNEL", "AyiinSupport")
 
 # Heroku Credentials for updater.
@@ -213,19 +213,19 @@ ANTI_SPAMBOT_SHOUT = sb(os.environ.get("ANTI_SPAMBOT_SHOUT", "False"))
 # untuk perintah teks costum .alive
 ALIVE_TEKS_CUSTOM = os.environ.get(
     "ALIVE_TEKS_CUSTOM",
-    "𝙷𝙴𝚈, 𝚂𝙰𝚈𝙰 𝙿𝙴𝙽𝙶𝙶𝚄𝙽𝙰 𝙰𝚈𝙸𝙸𝙽-𝚄𝚂𝙴𝚁𝙱𝙾𝚃")
+    "Turu")
 
 # Default .alive name
-ALIVE_NAME = os.environ.get("ALIVE_NAME", "AyiinXd")
+ALIVE_NAME = os.environ.get("ALIVE_NAME", "Layerxz")
 
 # Custom Emoji Alive
-ALIVE_EMOJI = os.environ.get("ALIVE_EMOJI", "✧")
+ALIVE_EMOJI = os.environ.get("ALIVE_EMOJI", "+")
 
 # Custom Emoji Alive
-INLINE_EMOJI = os.environ.get("INLINE_EMOJI", "✵")
+INLINE_EMOJI = os.environ.get("INLINE_EMOJI", "$")
 
 # Custom icon HELP
-ICON_HELP = os.environ.get("ICON_HELP", "⍟")
+ICON_HELP = os.environ.get("ICON_HELP", "*")
 
 # Time & Date - Country and Time Zone
 COUNTRY = str(os.environ.get("COUNTRY", "ID"))
@@ -245,7 +245,7 @@ BOT_VER = os.environ.get("BOT_VER", "3.3.3")
 
 # Default .alive logo
 ALIVE_LOGO = (os.environ.get("ALIVE_LOGO")
-              or "https://telegra.ph/file/940f21be8d8863b6c70ae.jpg")
+              or "https://telegra.ph/file/60b1203a273a76b2298dd.jpg")
 
 INLINE_PIC = (os.environ.get("INLINE_PIC")
               or "https://telegra.ph/file/940f21be8d8863b6c70ae.jpg")
@@ -489,7 +489,7 @@ else:
 
 async def update_restart_msg(chat_id, msg_id):
     message = (
-        f"**Ayiin-UserBot v`{BOT_VER}` is back up and running!**\n\n"
+        f"**Turu UserBot v`{BOT_VER}` is back up and running!**\n\n"
         f"**Telethon:** `{vsc}`\n"
         f"**Python:** `{python_version()}`\n"
     )
@@ -697,7 +697,7 @@ with bot:
         async def on_plug_in_callback_query_handler(event):
             if event.query.user_id == uid or event.query.user_id in SUDO_USERS:
                 buttons = paginate_help(0, dugmeler, "helpme")
-                text = f"**✨ ᴀʏɪɪɴ-ᴜsᴇʀʙᴏᴛ ɪɴʟɪɴᴇ ᴍᴇɴᴜ ✨**\n\n✧ **ᴏᴡɴᴇʀ** [{user.first_name}](tg://user?id={user.id})\n✧ **ᴊᴜᴍʟᴀʜ :** {len(dugmeler)} **Modules**"
+                text = f"**Turu Userbot**\n\n✧ **Owner** [{user.first_name}](tg://user?id={user.id})\n✧ **Jumlah :** {len(dugmeler)} **Modules**"
                 await event.edit(
                     text,
                     file=logoyins,
@@ -714,33 +714,33 @@ with bot:
             result = None
             query = event.text
             if event.query.user_id == uid and query.startswith(
-                    "@AyiinXdSupport"):
+                    "@wibuempireindo"):
                 buttons = paginate_help(0, dugmeler, "helpme")
                 result = await event.builder.photo(
                     file=logoyins,
                     link_preview=False,
-                    text=f"**✨ ᴀʏɪɪɴ-ᴜsᴇʀʙᴏᴛ ɪɴʟɪɴᴇ ᴍᴇɴᴜ ✨**\n\n✧ **ᴏᴡɴᴇʀ :** [{user.first_name}](tg://user?id={user.id})\n✧ **ᴊᴜᴍʟᴀʜ :** {len(dugmeler)} **Modules**",
+                    text=f"**Turu Userbot**\n\n✧ **Owner :** [{user.first_name}](tg://user?id={user.id})\n✧ **Jumlah :** {len(dugmeler)} **Modules**",
                     buttons=main_help_button,
                 )
             elif query.startswith("repo"):
                 result = builder.article(
                     title="Repository",
-                    description="Repository Ayiin - Userbot",
-                    url="https://t.me/AyiinXdSupport",
+                    description="Repository Turu - Userbot",
+                    url="https://t.me/wibuempireindo",
                     thumb=InputWebDocument(
                         INLINE_PIC,
                         0,
                         "image/jpeg",
                         []),
-                    text="**Ayiin-Userbot**\n➖➖➖➖➖➖➖➖➖➖\n✧  **ʀᴇᴘᴏ :** [AyiinXd](https://t.me/AyiinXd)\n✧ **sᴜᴘᴘᴏʀᴛ :** @AyiinXdSupport\n✧ **ʀᴇᴘᴏsɪᴛᴏʀʏ :** [Ayiin-Userbot](https://github.com/AyiinXd/Ayiin-Userbot)\n➖➖➖➖➖➖➖➖➖➖",
+                    text="**Ayiin-Userbot**\n------\n✧  **Repo :** [Layerxz](https://t.me/llogvbiu)\n✧ **Support :** @wibuempireindo\n✧ **Repo :** [Turu-Userbot](https://youtu.be/dQw4w9WgXcQ)\n------",
                     buttons=[
                         [
                             custom.Button.url(
-                                "ɢʀᴏᴜᴘ",
-                                "https://t.me/AyiinXdSupport"),
+                                "Group",
+                                "https://t.me/wibuempireindo"),
                             custom.Button.url(
-                                "ʀᴇᴘᴏ",
-                                "https://github.com/AyiinXd/Ayiin-Userbot"),
+                                "repo",
+                                "https://youtu.be/dQw4w9WgXcQ"),
                         ],
                     ],
                     link_preview=False,
@@ -748,8 +748,8 @@ with bot:
             elif query.startswith("string"):
                 result = builder.article(
                     title="String",
-                    description="String Ayiin - Userbot",
-                    url="https://t.me/AyiinXdSupport",
+                    description="String Turu - Userbot",
+                    url="https://t.me/wibuempireindo",
                     thumb=InputWebDocument(
                         INLINE_PIC,
                         0,
@@ -759,16 +759,16 @@ with bot:
                     buttons=[
                         [
                             custom.Button.url(
-                                "Bᴏᴛ Sᴛʀɪɴɢ",
+                                "Bot String",
                                 url="https://t.me/AyiinStringRobot?start="),
                             custom.Button.url(
-                                "Sᴛʀɪɴɢ Rᴇᴘʟɪᴛ",
+                                "String Replit",
                                 url="https://repl.it/@AyiinXd/AyiinString?lite=1&outputonly=1"),
                         ],
                         [
                             custom.Button.url(
-                                "Sᴜᴘᴘᴏʀᴛ",
-                                url="https://t.me/AyiinXdSupport"),
+                                "Support",
+                                url="https://t.me/wibuempireindo"),
                         ],
                     ],
                     link_preview=False,
@@ -789,8 +789,8 @@ with bot:
                     [custom.Button.inline("ʙᴀᴄᴋ", data="yins_close")])
                 result = builder.article(
                     title="Lang",
-                    description="Lang Ayiin - Userbot",
-                    url="https://t.me/AyiinXdSupport",
+                    description="Lang Turu - Userbot",
+                    url="https://t.me/wibuempireindo",
                     thumb=InputWebDocument(
                         INLINE_PIC,
                         0,
@@ -834,23 +834,23 @@ with bot:
                 )
             else:
                 result = builder.article(
-                    title="✨ ᴀʏɪɪɴ-ᴜsᴇʀʙᴏᴛ ✨",
-                    description="Ayiin - Userbot | Telethon",
-                    url="https://t.me/AyiinSupport",
+                    title="Turu Userbot",
+                    description="Turu - Userbot | Telethon",
+                    url="https://t.me/wibuempireindo",
                     thumb=InputWebDocument(
                         INLINE_PIC,
                         0,
                         "image/jpeg",
                         []),
-                    text=f"**Ayiin-Userbot**\n➖➖➖➖➖➖➖➖➖➖\n✧ **ᴏᴡɴᴇʀ :** [{user.first_name}](tg://user?id={user.id})\n✧ **ᴀssɪsᴛᴀɴᴛ:** {tgbotusername}\n➖➖➖➖➖➖➖➖➖➖\n**ᴜᴘᴅᴀᴛᴇs :** @AyiinSupport\n➖➖➖➖➖➖➖➖➖➖",
+                    text=f"**Turu-Userbot**\n------\n✧ **Master :** [{user.first_name}](tg://user?id={user.id})\n✧ **Asisten:** {tgbotusername}\n------\n**Update :** @wibuempireindo\n------",
                     buttons=[
                         [
                             custom.Button.url(
-                                "ɢʀᴏᴜᴘ",
-                                "https://t.me/AyiinXdSupport"),
+                                "Group",
+                                "https://t.me/wibuempireindo"),
                             custom.Button.url(
-                                "ʀᴇᴘᴏ",
-                                "https://github.com/AyiinXd/Ayiin-Userbot"),
+                                "Repo",
+                                "https://youtu.be/dQw4w9WgXcQ"),
                         ],
                     ],
                     link_preview=False,
@@ -899,7 +899,7 @@ with bot:
             if event.query.user_id == uid or event.query.user_id in SUDO_USERS:  # @Ayiin-Userbot
                 # https://t.me/TelethonChat/115200
                 text = (
-                    f"**✨ ᴀʏɪɪɴ-ᴜsᴇʀʙᴏᴛ ɪɴʟɪɴᴇ ᴍᴇɴᴜ ✨**\n\n✧ **ᴏᴡɴᴇʀ :** [{user.first_name}](tg://user?id={user.id})\n✧ **ᴊᴜᴍʟᴀʜ :** {len(dugmeler)} **Modules**")
+                    f"**Turu Userbot Menu**\n\n✧ **Master :** [{user.first_name}](tg://user?id={user.id})\n✧ **Jumlah :** {len(dugmeler)} **Modules**")
                 await event.edit(
                     text,
                     file=logoyins,
@@ -943,9 +943,9 @@ with bot:
 """,
                                  buttons=[
                                      [
-                                         Button.inline("⍟ ᴠᴄ ᴘʟᴜɢɪɴ ⍟",
+                                         Button.inline("* VC PLUGIN *",
                                                        data="vcplugin"),
-                                         Button.inline("⍟ ᴠᴄ ᴛᴏᴏʟs ⍟",
+                                         Button.inline("* VC TOOLS *",
                                                        data="vctools")],
                                      [custom.Button.inline(
                                          "ʙᴀᴄᴋ", data="gcback")],
@@ -1045,12 +1045,12 @@ with bot:
 """,
                                  buttons=[
                                      [
-                                         Button.inline("⍟ ʙᴛᴘᴍ ⍟",
+                                         Button.inline("* Turu *",
                                                        data="btpmayiin"),
-                                         Button.inline("⍟ ʏɪɴs ʙᴏᴋᴇᴘ ⍟",
+                                         Button.inline("* Mangan *",
                                                        data="yinsbokep")],
                                      [custom.Button.inline(
-                                         "ʙᴀᴄᴋ", data="gcback")],
+                                         "Back", data="gcback")],
                                  ]
                                  )
             else:
