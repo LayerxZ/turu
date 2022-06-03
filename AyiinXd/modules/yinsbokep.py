@@ -13,7 +13,7 @@ from telethon.tl.types import InputMessagesFilterVideo
 
 from AyiinXd import CMD_HANDLER as cmd
 from AyiinXd import CMD_HELP, BLACKLIST_CHAT
-from AyiinXd.ayiin import ayiin_cmd, eod, eor
+from AyiinXd.ayiin import ayiin_cmd, eod
 from Stringyins import get_string
 
 

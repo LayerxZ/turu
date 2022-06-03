@@ -766,14 +766,15 @@ with bot:
                                 url="https://repl.it/@AyiinXd/AyiinString?lite=1&outputonly=1"),
                         ],
                         [
-                            custom.Button.url("Sᴜᴘᴘᴏʀᴛ", url="https://t.me/AyiinXdSupport"),
+                            custom.Button.url(
+                                "Sᴜᴘᴘᴏʀᴛ",
+                                url="https://t.me/AyiinXdSupport"),
                         ],
                     ],
                     link_preview=False,
                 )
             elif query.startswith("lang"):
                 languages = get_languages()
-                text = "List Of Available Languages.",
                 tutud = [
                     Button.inline(
                         f"{languages[yins]['asli']} [{yins.lower()}]",
@@ -784,7 +785,8 @@ with bot:
                 buttons = list(zip(tutud[::2], tutud[1::2]))
                 if len(tutud) % 2 == 1:
                     buttons.append((tutud[-1],))
-                buttons.append([custom.Button.inline("ʙᴀᴄᴋ", data="yins_close")])
+                buttons.append(
+                    [custom.Button.inline("ʙᴀᴄᴋ", data="yins_close")])
                 result = builder.article(
                     title="Lang",
                     description="Lang Ayiin - Userbot",

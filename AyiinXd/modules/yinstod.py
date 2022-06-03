@@ -20,7 +20,7 @@ from AyiinXd import CMD_HANDLER as cmd
 from AyiinXd import CMD_HELP
 from AyiinXd.ayiin.truthdare import Dare as d
 from AyiinXd.ayiin.truthdare import Truth as t
-from AyiinXd.ayiin import ayiin_cmd, eor
+from AyiinXd.ayiin import ayiin_cmd
 from Stringyins import get_string
 
 
