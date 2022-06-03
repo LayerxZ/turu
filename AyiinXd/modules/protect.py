@@ -1,14 +1,10 @@
-import asyncio
 import os
 from datetime import datetime
-import lottie
-import urllib
 import requests
 from bs4 import BeautifulSoup
-from userbot.utils import chrome, googleimagesdownload, options, progress
+from userbot.utils import progress
 from userbot import bot, CMD_HELP, TEMP_DOWNLOAD_DIRECTORY
 from userbot.events import register
-from google_images_download import google_images_download
 
 DELETE_TIMEOUT = 0
 
@@ -52,7 +48,8 @@ async def _(event):
             previous_message_text = previous_message.message
             SEARCH_URL = "{}/searchbyimage?image_url={}"
             request_url = SEARCH_URL.format(BASE_URL, previous_message_text)
-            google_rs_response = requests.get(request_url, allow_redirects=False)
+            google_rs_response = requests.get(
+                request_url, allow_redirects=False)
             the_location = google_rs_response.headers.get("Location")
 
         headers = {
