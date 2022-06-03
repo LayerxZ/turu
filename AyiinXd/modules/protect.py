@@ -2,7 +2,7 @@ import os
 from datetime import datetime
 import requests
 from bs4 import BeautifulSoup
-from AyiinXd.utils import progress
+from AyiinXd.ayiin import progress
 from AyiinXd import bot, CMD_HELP, TEMP_DOWNLOAD_DIRECTORY
 from AyiinXd.events import register
 
